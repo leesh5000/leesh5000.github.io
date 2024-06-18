@@ -14,7 +14,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: HelloC Dev Note # the main title
+title: SH 개발노트 # the main title
 
 tagline: # it will display as the sub-title
 
@@ -34,7 +34,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: HelloC
+  name: leesh5000
   email: leesh5000@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
