@@ -24,3 +24,8 @@ package-lock.json
 # Misc
 _sass/dist
 assets/js/dist
+
+# Writerside
+_posts/.idea
+_posts/Writerside
+_posts/.placeholder
