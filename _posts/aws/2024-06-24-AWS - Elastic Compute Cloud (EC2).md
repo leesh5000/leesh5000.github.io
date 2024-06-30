@@ -1,11 +1,11 @@
 ---
-title: [AWS] Elastic Compute Cloud (EC2)
+title: AWS - Elastic Compute Cloud (EC2)
 date: 2024-06-24 22:40:00 +09:00
 categories: [AWS]
 tags: [AWS]
 ---
 
-## Elastic Compute Cloud (EC2)
+## EC2
 ---
 
 - EC2는 AWS의 가장 대중적인 IaaS 서비스

@@ -1,5 +1,5 @@
 ---
-title: [k8s] Introduction
+title: k8s - Introduction
 date: 2024-06-29 22:06:00 +09:00
 categories: [k8s]
 tags: [k8s]
