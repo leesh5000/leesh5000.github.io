@@ -1,8 +1,8 @@
 ---
-title: k8s - Introduction
+title: Introduction
 date: 2024-06-29 22:06:00 +09:00
-categories: [k8s]
-tags: [k8s]
+categories: [kubernetes]
+tags: [kubernetes]
 ---
 
 ## 가상화 기술의 발전 과정

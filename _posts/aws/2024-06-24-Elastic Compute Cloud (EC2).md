@@ -1,5 +1,5 @@
 ---
-title: AWS - Elastic Compute Cloud (EC2)
+title: Elastic Compute Cloud (EC2)
 date: 2024-06-24 22:40:00 +09:00
 categories: [AWS]
 tags: [AWS]
