@@ -1,5 +1,5 @@
 ---
-title: Region & AZ
+title: [AWS] Region & AZ
 date: 2024-06-19 12:28:00 +09:00
 categories: [AWS]
 tags: [AWS]
