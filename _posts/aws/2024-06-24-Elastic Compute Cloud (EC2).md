@@ -177,9 +177,9 @@ tags: [AWS]
   - 혹은, 로드 밸런서를 사용하여 Public IP를 사용하지 않을수도 있음
 
 ## EC2 Placement Groups
---
+---
 
-- EC2 인스턴스 물리적으로 배치 전략
+EC2 인스턴스 배치 전략
 
 ### Cluster
 
