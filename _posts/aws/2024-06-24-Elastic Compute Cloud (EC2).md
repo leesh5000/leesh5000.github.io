@@ -44,25 +44,26 @@ tags: [AWS]
         - 5 : 세대
         - 2xlarge : 같은 인스턴스 패밀리 사이에서의 사이즈
 
-### EC2 인스턴스 패밀리
+## EC2 인스턴스 패밀리
+---
 
-#### General Purpose
+### General Purpose
 
 - m 패밀리, t 패밀리
 - Use cases : 웹 서버, 코드 리포지토리, CI/CD 등 다양한 워크로드에 사용하기 좋음
 
-#### Compute Optimized
+### Compute Optimized
 
 - c 패밀리
 - Use cases : 배치 프로세싱, 고성능 웹서버, 머신러닝, 멀티미디어, 게임 서버 등에 적합
 
-#### Memory Optimized
+### Memory Optimized
 
 - r 패밀리, x1 패밀리 등
 - 메모리 상에서 많은 데이터를 처리하는 워크로드에 적합
 - Use cases : 데이터베이스, 분석, 캐싱, 대규모 분산 메모리 캐시, 대규모의 비정형 데이터를 처리하는 실시간 애플리케이션 등에 적합
 
-#### Storage Optimized
+### Storage Optimized
 
 - i 패밀리, d2 패밀리 등
 - 로컬 스토리지에서 많은 양의 데이터에 I/O하는 워크로드에 적합
