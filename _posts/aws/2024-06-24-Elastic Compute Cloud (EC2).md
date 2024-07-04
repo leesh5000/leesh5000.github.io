@@ -151,6 +151,64 @@ tags: [AWS]
 - 사용 사례: 예측 가능한 워크로드
 - ex) 리조트를 예약을 해두고 사용할 지 안할지는 마음대로 결정
 
+## Private IP vs Public IP
+---
+
+### Public IP
+
+- 인스턴스가 인터넷에 직접 연결되어 있는 IP 주소
+- 인터넷을 통해 인스턴스에 접근 가능
+- 인스턴스가 시작될 때 자동으로 할당
+
+### Private IP
+
+- 인스턴스가 VPC 내부에서 사용하는 IP 주소
+- VPC 내부에서만 접근 가능
+- NAT + Internet Gateway(proxy)를 통해 인터넷에 접근 가능
+
+## Elastic IP
+---
+
+- 고정된 Public IP 주소
+- AWS 계정당 5개만 사용할 수 있음
+- `사용하지 않는 것을 권장`
+  - 대신에, Public IP + DNS를 사용
+  - 혹은, 로드 밸런서를 사용하여 Public IP를 사용하지 않을수도 있음
+
+## EC2 Placement Groups
+--
+
+- EC2 인스턴스 물리적으로 배치 전략
+
+### Cluster
+
+- 모든 EC2 인스턴스가 동일한 하드웨어(Rack)와 동일한 가용 영역(AZ)에 존재
+- 매우 높은 네트워크 성능을 위해 동일한 Rack에 배치
+- pros
+  - 매우 빠른 네트워크 속도 (~10Gbps bandwidth between instances)
+- cons
+  - 하드웨어(Rack)에 장애가 발생하면 모든 인스턴스가 중단될 수 있음
+- use case
+  - 빠른 네트워크 속도와 짧은 지연 시간이 필요한 경우 (HPC, Big Data, etc.)
+
+### Spread
+
+- 모든 EC2 인스턴스가 다른 AZ, 다른 하드웨어에 위치
+- AZ 당 7개의 인스턴스 그룹만 가능
+- pros
+  - 동시 실패 위험 감소
+- cons
+  - 배치 그룹 당 7개의 인스턴스 제한
+- use case
+  - 애플리케이션이 고가용성(High Availability)이 필요한 경우
+  - 인스턴스 오류를 서로 격리해야하는 경우
+
+### Partition
+
+- 인스턴스를 여러 파티션으로 나누어 배치
+- 파티션은 가용 영역 내의 여러 하드웨어 렉 세트에 존재
+
+
 ```tip
 - On-Demand, Reserved, Savings Plans는 인스턴스를 예약하는 방법
 ```
