@@ -183,7 +183,7 @@ tags: [AWS]
 
 ### Cluster
 
-![ec2_placement_group_cluster](../../_images/ec2_placement_group_cluster.png)
+![ec2_placement_group_cluster](/assets/img/ec2_placement_groups_cluster.png)
 
 - 모든 EC2 인스턴스가 동일한 하드웨어(Rack)와 동일한 가용 영역(AZ)에 존재
 - 매우 높은 네트워크 성능을 위해 동일한 Rack에 배치
@@ -196,7 +196,7 @@ tags: [AWS]
 
 ### Spread
 
-![ec2_placement_group_spread](../../_images/ec2_placement_groups_spread.png)
+![ec2_placement_group_spread](/assets/img/ec2_placement_groups_spread.png)
 
 - 모든 EC2 인스턴스가 다른 AZ, 다른 하드웨어에 위치
 - AZ 당 7개의 인스턴스 그룹만 가능
@@ -210,7 +210,7 @@ tags: [AWS]
 
 ### Partition
 
-![ec2_placement_group_partition](../../_images/ec2_placement_groups_partition.png)
+![ec2_placement_group_partition](/assets/img/ec2_placement_groups_partition.png)
 
 - 인스턴스를 여러 파티션으로 나누어 배치
 - 파티션은 가용 영역 내의 여러 하드웨어 렉 세트에 존재
