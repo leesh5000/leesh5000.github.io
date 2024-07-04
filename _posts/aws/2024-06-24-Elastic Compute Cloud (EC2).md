@@ -182,6 +182,8 @@ tags: [AWS]
 
 ### Cluster
 
+![ec2_placement_group_cluster](../../_images/aws/2024-06-24-Elastic%20Compute%20Cloud%20(EC2)/ec2_placement_group_cluster.png)
+
 - 모든 EC2 인스턴스가 동일한 하드웨어(Rack)와 동일한 가용 영역(AZ)에 존재
 - 매우 높은 네트워크 성능을 위해 동일한 Rack에 배치
 - pros
