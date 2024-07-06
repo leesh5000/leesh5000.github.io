@@ -215,31 +215,27 @@ EC2 인스턴스 배치 전략
 - 인스턴스를 여러 파티션으로 나누어 배치
 - 파티션은 가용 영역 내의 여러 하드웨어 렉 세트에 존재
 
+## Elastic Network Interface (ENI)
+---
 
-```tip
-- On-Demand, Reserved, Savings Plans는 인스턴스를 예약하는 방법
-```
+- VPC 내부에서 virtual network card를 나타내는 논리적 컴포넌트
+- ENI는 public IP, private IP 각각 하나씩 가짐
+- EC2 인스턴스와 무관하게 독립적으로 생성 가능하고, 언제든지 EC2 인스턴스에 부착 가능
+- AZ 내에서 ENI를 이동할 수 있음
+- `Use Case`
+  - 장애 조치를 위해 ENI를 다른 인스턴스로 이동
+- 참고자료 링크
+  - [AWS Docs - Elastic Network Interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html)
 
-```
-- Spot Instances, Dedicated Hosts, Dedicated Instances, Capacity Reservations는 인스턴스를 예약하지 않는 방법
-```
+## EC2 Hibernate
+---
 
-`tip
-`
-
-- hihi~~hi~~
-- hihihi<mark>hi</mark>
-
-EC2는
-
-: AWS 서비스이다
-
-> HELLO
-
->tip HELLO
-
-> An example showing the `tip` type prompt.
-{: .prompt-tip }
+- EC2 인스턴스를 중지하고, 인스턴스의 메모리 상태를 디스크에 저장 -> `인스턴스 부팅이 빨라짐`
+- 루트 경로의 EBS에 RAM 상태를 저장 -> EBS 용량이 충분해야하며, 암호화되어야 함
+- `Use Case`
+  - 인스턴스 부팅 시간을 줄이고, 상태를 유지하고 싶은 경우
+  - RAM 상태를 유지하고 싶을 때
+- 절전모드는 최대 60일까지 사용 가능
 
 ## References
 ---
