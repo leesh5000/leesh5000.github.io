@@ -42,7 +42,7 @@ tags: [aws]
 ### EBS Encryption
 
 ## EFS
---
+---
 
 - 여러 EC2 인스턴스에 마운트 될 수 있는 관리형 NFS(Network File System)
 - 여러 AZ의 EC2 인스턴스들에 부착 가능
@@ -51,7 +51,7 @@ tags: [aws]
 - EFS-IA 기능을 사용하여 비용 절감 가능
 
 ## EC2 Instance Store
---
+---
 
 - EBS보다 고성능 하드웨어 디스크
 - EC2 인스턴스가 중단/종료되면 데이터 손실 (ephemeral)
