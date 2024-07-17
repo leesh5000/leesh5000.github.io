@@ -5,6 +5,9 @@ categories: [AWS]
 tags: [AWS]
 ---
 
+> 이 문서는 불특정 다수에게 정보 전달을 목적으로 하는 문서가 아니며, **작성자가 학습한 내용을 정리하고 참고하기 위해 작성한 문서**입니다.
+{: .prompt-tip}
+
 ## EC2
 ---
 
@@ -12,7 +15,7 @@ tags: [AWS]
 - 유저가 필요할 때 사용 가능 (On-Demand)
 
 ## EC2 설정 옵션
-- - -
+---
 
 - Operating System (OS) : Linux, Windows, Mac
 - Computing Power & Core (CPU)
@@ -28,7 +31,7 @@ tags: [AWS]
     - EC2 UserData
 
 ## EC2 User Data
-***
+---
 
 - EC2 인스턴스가 시작될 때 실행되는 스크립트
 - 사용 사례
@@ -36,7 +39,7 @@ tags: [AWS]
 - User Data 는 루트 계정으로 실행되므로 모든 명령어는 `sudo` 로 실행 됨
 
 ## EC2 Instance Types
--------------------------
+---
 
 - EC2 인스턴스는 아래와 같은 이름 규칙이 있음
     - `ex) m5.2xlarge`
@@ -179,8 +182,6 @@ tags: [AWS]
 ## EC2 Placement Groups
 ---
 
-EC2 인스턴스 배치 전략
-
 ### Cluster
 
 ![ec2_placement_group_cluster](/assets/img/ec2_placement_groups_cluster.png)
@@ -237,7 +238,12 @@ EC2 인스턴스 배치 전략
   - RAM 상태를 유지하고 싶을 때
 - 절전모드는 최대 60일까지 사용 가능
 
-## References
+## AMI
 ---
 
-- [Stephane Maarek AWS Certified Solutions Architect Associate - Udemy](https://www.udemy.com/course/aws-certified-solutions-architect-associate/)
+- AMI(Amazon Machine Image)는 EC2 인스턴스의 커스텀
+- EC2 설정, OS, 소프트웨어 등을 미리 설치 해 놓을 수 있음
+- pre-packaged 이므로 EC2 인스턴스를 빠르게 시작 가능
+- 특정 리전에 종속됨
+  - 복사해서 다른 리전에서 사용 가능
+- 
