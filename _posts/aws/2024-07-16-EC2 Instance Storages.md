@@ -1,6 +1,5 @@
 ---
 title: EC2 Instance Storages
-author: leesh5000
 date: 2024-07-16 19:11:00 +09:00
 categories: [aws]
 tags: [aws]
