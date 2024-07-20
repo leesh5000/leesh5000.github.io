@@ -1,8 +1,8 @@
 ---
 title: EC2 Instance Storages
 date: 2024-07-16 19:11:00 +09:00
-categories: [aws]
-tags: [aws]
+categories: [AWS]
+tags: [AWS]
 ---
 
 > 이 문서는 불특정 다수에게 정보 전달을 목적으로 하는 문서가 아니며, **작성자가 학습한 내용을 정리하고 참고하기 위해 작성한 문서**입니다.
